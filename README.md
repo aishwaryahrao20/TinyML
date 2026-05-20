@@ -18,10 +18,10 @@ This project covers the full TinyML development cycle for audio classification: 
 
 ```
 ┌─────────────┐     ┌──────────────────┐     ┌─────────────────┐     ┌──────────────────────┐
-│   Record    │     │  Feature Extract  │     │   Train MLP     │     │  Deploy to MCU       │
-│  1s WAV @   │────►│  101 frames ×     │────►│  Flatten → 64   │────►│  Export as C header   │
-│  16 kHz     │     │  13 log-energy    │     │  → 64 → 5       │     │  (keyword_linear_     │
-│             │     │  dims             │     │  (Softmax)       │     │   model.h)            │
+│   Record    │     │  Feature Extract │     │   Train MLP     │     │  Deploy to MCU       │
+│  1s WAV @   │────►│  101 frames ×    │────►│  Flatten → 64   │────►│  Export as C header  │
+│  16 kHz     │     │  13 log-energy   │     │  → 64 → 5       │     │  (keyword_linear_    │
+│             │     │  dims            │     │  (Softmax)      │     │   model.h)           │
 └─────────────┘     └──────────────────┘     └─────────────────┘     └──────────────────────┘
 ```
 
